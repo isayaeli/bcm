@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+<section class="log_sc1 wow fadeInUp">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 mx-auto">
+        <div class="log_blk1">
+          <div class="log_hd1">Register</div>
+          <div class="log_bdy1">
+            <form action="http://bcmexchange.osiztechnologies.in/register.jsp" id="register_form" class="cm_frm1" method="post" accept-charset="utf-8">
+                                                                             <input type="hidden" name="cs_name" value="9537d1d9fd85cbeae342bafb7fa3e13a" />
+              <div class="form-group row">
+                <div class="col-md-6">
+                <div class="input-group cm_inpgrp2">
+                  <span class="input-group-addon"> <img class="img-fluid" src="http://bcmexchange.osiztechnologies.in/design_cab/images/ico6.png"> </span>
+                  <input type="text" class="form-control" placeholder="Username" name="username" >
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="input-group cm_inpgrp2"> 
+                  <span class="input-group-addon"> <img class="img-fluid" src="http://bcmexchange.osiztechnologies.in/design_cab/images/ico8.png"> </span>
+                  <input type="text" class="form-control" placeholder="Email Address" name="email">
+                </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                <div class="input-group cm_inpgrp2"> 
+                  <span class="input-group-addon"> <img class="img-fluid" src="http://bcmexchange.osiztechnologies.in/design_cab/images/ico7.png"> </span>
+                  <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="input-group cm_inpgrp2"> 
+                  <span class="input-group-addon"> <img class="img-fluid" src="http://bcmexchange.osiztechnologies.in/design_cab/images/ico7.png"> </span>
+                  <input type="password" class="form-control" name="cpassword" data-match="#inputPassword" placeholder="Confirm Password">
+                </div>
+                </div>
+              </div>              
+              <!-- <div class="form-group row">
+                <div class="col-md-8">
+                <div class="input-group cm_inpgrp3">
+         
+                <input oninput="input_create()"  class="form-control" placeholder="Mobile Number" type="text" name='mobile' id="mobile" >
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-success" onclick="send_otp(mobile.value)"> Send OTP </button>
+                </div>
+              </div>    
+					<span id="err_opt" style="color:red;font-size:12px;"></span>
+			  
+                </div>
+                <div class="col-md-4">               
+                  <input type="text" class="form-control" oninput="check_otp(this.value)" name="otp" placeholder="OTP Code" id="otp" readonly>               
+                </div>
+              </div>           			   -->
+			  <div class="form-group row">
+
+			  <div style="margin-left:150px;" class="g-recaptcha " data-sitekey="6Lc3m7sZAAAAAMn5H0cPov5K7_o6Y9oOpUipFmAD" name="recaptcha" id="recaptcha" data-callback="correctCaptcha"></div>
+			  </div>
+			  
+			  <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+			  
+			   <div id="captcha_error"></div>
+              
+              <div class="form-group reg_chk">
+              <div class="checkbox1">
+                <input type="checkbox" id="agree"  name="check" value="1"/>
+                <label for="agree">I agree the <a target="_blank" href="http://bcmexchange.osiztechnologies.in/terms">terms and conditions</a></label>
+              </div> 
+              </div>
+              
+              <div class="form-group text-center">
+                <button type="submit" class="btn cm_orngbtn1" id="register_btn">Create Account</button>
+				 
+				 <button type="button" class="btn cm_orngbtn1" id="register_btn1" title="Disabled please enter correct OTP to proceed" disabled style="display:none">Create Account</button>
+				 
+              </div>             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock contents %}

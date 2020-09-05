@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load static  %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-7 mx-auto">
+        <div class="log_blk1">
+          <div class="log_hd1">Login</div>
+          <div class="log_bdy1">
+               <form action="http://bcmexchange.osiztechnologies.in/login_form.jsp" id="login_form" class="cm_frm1" method="post" accept-charset="utf-8">
+                                                  <input type="hidden" name="cs_name" value="9537d1d9fd85cbeae342bafb7fa3e13a" />
+              <div class="form-group">
+                <div class="input-group cm_inpgrp2"> <span class="input-group-addon"> <img class="img-fluid" src="http://bcmexchange.osiztechnologies.in/design_cab/images/ico6.png"> </span>
+                  <input type="text" class="form-control" placeholder="Username / Email Address" name="email" id="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group cm_inpgrp2"> <span class="input-group-addon"> <img class="img-fluid" src="http://bcmexchange.osiztechnologies.in/design_cab/images/ico7.png"> </span>
+                  <input type="password" class="form-control" placeholder="Password" name="password">
+                </div>
+              </div>
+              <div class="form-group row">
+              <input type="hidden" name="type_stat" value="inner">
+               
+               <div style="margin-left:10px;" class="g-recaptcha " data-sitekey="6Lc3m7sZAAAAAMn5H0cPov5K7_o6Y9oOpUipFmAD" name="recaptcha" id="recaptcha" data-callback="correctCaptcha"></div>
+               
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn cm_orngbtn1">Login</button>
+              </div>
+              <div class="form-group text-center"> <a href="javascript:;" class="forg_tx2" data-toggle="modal" data-target="#forg_pop">Forgot your Password ?</a> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock contents %}

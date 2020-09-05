@@ -1,0 +1,300 @@
+{% extends 'base.html' %}
+ {% load static %}
+
+{% block contents %}
+<section class="bann_sc">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bann_blk1 wow fadeIn text-left">
+                    <h3>
+                        Exchange Cryptocurrency at the best rate                    </h3>
+                    <h4>
+                        <p>Exchange Securely on one of the most active Digital asset Exchange</p>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-right">
+                    <img src="{% static 'home/images/banner-img.png' %}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="bann_blk1 wow fadeIn">
+            <div class="row">
+                                <div class="login-form col-10 col-md-9 mx-auto">
+                    <form action="http://bcmexchange.osiztechnologies.in/" id="login_form" class="" method="post" accept-charset="utf-8">
+<input type="hidden" name="cs_name" value="9537d1d9fd85cbeae342bafb7fa3e13a" />                                                                                                                        
+                    <div class="fw_wd">
+                        <div class="log_fd1">
+
+                            <div class="form-group row">
+                                <div class="col-md-6 col-lg-5">
+                                    <input type="text" id="email" class="form-control" placeholder="Username / Email address" name="email">
+                                </div>
+                                <div class="col-md-6 col-lg-5 mt-3 mt-md-0">
+                                    <input type="password" class="form-control" placeholder="Password" name="password">
+                                </div>
+                                <div class="col-md-12 mt-3 mt-lg-0 col-lg-2">
+                                    <div class="fw_wd text-center">
+                                        <button type="submit" class="btn cm_orngbtn1">Login Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" value='outer' name="type_stat">
+
+                    </form>
+                    <div class="d-flex flex-wrap text-center">
+                        <div class="col-lg-6 text-lg-left p-0">
+                            <a href="#" class="forg_tx1" data-toggle="modal" data-target="#forg_pop">Forgot Password ?</a>
+                        </div>
+                        <div class="mt-2 mt-lg-0 col-lg-6 text-lg-right p-0">
+                            <p class="reg_tx1">Dont have an account <a href="http://bcmexchange.osiztechnologies.in/register">Signup here !</a></p>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </div>
+</section>
+<!-- <section class="join_sc text-center">
+    <div class="container">
+        <h4 class="animated wow fadeInUp">Join over 1,00,000 Satisied Customers.</h4>
+    </div>
+</section> -->
+<section class="exch_sc wow fadeInUp">
+    <div class="container">
+        <form action="http://bcmexchange.osiztechnologies.in/" id="exchange_form" method="post" accept-charset="utf-8">
+                          <input type="hidden" name="cs_name" value="9537d1d9fd85cbeae342bafb7fa3e13a" />
+        <div class="row justify-content-between">
+            <div class="col-lg-5 col-md-12">
+                <h4>Instantly Exchange CryptoCurrency</h4>
+                <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                <button class="btn cm_orngbtn1">
+                          Register Now!                          
+                        </button>
+            </div>
+            <div class="col-lg-5 col-md-12 mt-4 mt-lg-0">
+                <div class="row exchange_card">
+                    <div class="col-md-12">
+                        <div class="form-group row">
+                            <div class="col-md-12 mb-3">
+                                <label class="form-control-label">You Send</label>
+                                <div class="input-group cm_einpgrp1">
+                                    <input type="text" id="amount" name="amount" oninput="change_val()" onkeypress="return isNumberKey(event)" class="form-control" placeholder="Amount">
+                                    <input type="hidden" id="fee">
+                                    <input type="hidden" id="ex_rate">
+                                    <input type="hidden" id="min">
+                                    <input type="hidden" id="max">
+                                    <input type="hidden" id="fc">
+                                    <input type="hidden" id="sc">
+                                    <input type="hidden" id="tofixed1_hidden">
+                                    <input type="hidden" id="f_balance">
+                                    <input type="hidden" id="s_balance">
+                                    <input type="hidden" id="fee_final">
+                                    <input type="hidden" id="price_final">
+                                    <div class="input-group-btn">
+                                        <div class="bs-docs-example select_stylec1">
+                                            <select class="selectpicker" data-style="btn-primary" onchange="change_first(this.value)" id="f_cur">
+                                                <option  value="BTC">BTC</option>
+                                                 <option  value="ETH">ETH</option>
+                                                <option  value="XRP">XRP</option>
+                                                <option  value="LTC">LTC</option>
+                                                <option  value="USD">USD</option>
+                                                <option  value="EUR">EUR</option>
+                                                <option  value="GBP">GBP</option>
+                                                <option  value="NZD">NZD</option>
+                                                <option  value="AUD">AUD</option>
+                                                <option  value="NGN">NGN</option>
+                                                <option  value="CNY">CNY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-control-label">You Get</label>
+                                <div class="input-group cm_einpgrp1">
+                                    <input type="text" id="price" oninput="change_val1()" value='' name="price" onkeypress="return isNumberKey(event)" class="form-control" placeholder="Price">
+
+                                    <div class="input-group-btn">
+                                        <p>You get 100.000 BTC</p>
+                                        <div class="bs-docs-example select_stylec1" id="second_cur_select">
+                                            <select class="selectpicker" data-style="btn-primary" onchange="change_sec(this.value)" id="s_cur">
+                                                <option  value="BTC">BTC</option>
+                                                <option  value="ETH">ETH</option>
+                                                <option  value="XRP">XRP</option>
+                                                <option  value="LTC">LTC</option>
+                                                <option  value="USD">USD</option>
+                                                <option  value="EUR">EUR</option>
+                                                <option  value="GBP">GBP</option>
+                                                <option  value="NZD">NZD</option>
+                                                <option  value="AUD">AUD</option>
+                                                <option  value="NGN">NGN</option>
+                                                <option  value="CNY">CNY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p id="final_view"></p>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" id="enablee" class="btn cm_orngbtn1">Exchange Now</button>
+                            <button type="button" id="disablee" class="btn cm_orngbtn1" style="display:none;" onclick="deactive()">Exchange Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</section>
+<hr>
+<section class="mkt_sc wow fadeInUp">
+    <div class="container">
+        <div class="cm_head1">
+            <h4>Market Price Chart</h4>
+            <!-- <div class="sep1"><img src="http://bcmexchange.osiztechnologies.in/design_cab/images/sep1.png" class="img-fluid"></div> -->
+        </div>
+        <div class="tab_sc1">
+            <ul class="nav nav-pills fst_pil justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#pill1">
+                        <img src="{% static 'home/images/coins-1.png' %}" class="img-fluid mr-2"> BTC
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#pill2">
+                        <img src="{% static 'home/images/coins-2.png' %}" class="img-fluid mr-2"> ETH
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#pill3">
+                        <img src="{% static 'home/images/coin-5.png' %}" class="img-fluid mr-2"> XRP
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#pill4">
+                        <img src="{% static 'home/images/coins-6.png' %}" class="img-fluid mr-2"> DASH
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#pill5">
+                        <img src="{% static 'home/images/coins-4.png' %}" class="img-fluid mr-2"> LTC
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="pill1">
+                    <ul class="list-inline grp_lis1">
+                        <li class="list-inline-item grfd1a"><span class="grfd1">BTC</span>
+                            1000 USD</li>
+                        <!--<li class="list-inline-item grfd1a"><span class="grfd1">Last</span>0.0051000</li>-->
+                        <li class="list-inline-item"><span class="grfd1">High<i class="uparw"></i></span>10</li>
+                        <li class="list-inline-item"><span class="grfd1">Low<i class="dwnarw"></i></span>5</li>
+                    </ul>
+                    <div class="graph_im1 mx-auto text-center" id="chart_div"> </div>
+                </div>
+                <div class="tab-pane fade show" id="pill2">
+                    <ul class="list-inline grp_lis1">
+                        <li class="list-inline-item grfd1a"><span class="grfd1">ETH</span>
+                            63 USD</li>
+                        <!--<li class="list-inline-item grfd1a"><span class="grfd1">Last</span>0.0051000</li>-->
+                        <li class="list-inline-item"><span class="grfd1">High<i class="uparw"></i></span>0.5000000</li>
+                        <li class="list-inline-item"><span class="grfd1">Low<i class="dwnarw"></i></span>0.5000000</li>
+                    </ul>
+                    <div class="graph_im1 mx-auto text-center" id="chart_div1" style="margin-left:2000px;"> </div>
+                </div>
+                <div class="tab-pane fade show" id="pill3">
+                    <ul class="list-inline grp_lis1">
+                        <li class="list-inline-item grfd1a"><span class="grfd1">XRP</span>
+                            63 USD</li>
+                        <!--<li class="list-inline-item grfd1a"><span class="grfd1">Last</span>0.0051000</li>-->
+                        <li class="list-inline-item"><span class="grfd1">High<i class="uparw"></i></span>30</li>
+                        <li class="list-inline-item"><span class="grfd1">Low<i class="dwnarw"></i></span>35</li>
+                    </ul>
+                    <div class="graph_im1 mx-auto text-center" id="chart_div2"> </div>
+                </div>
+                <div class="tab-pane fade show" id="pill4">
+                    <ul class="list-inline grp_lis1">
+                        <li class="list-inline-item grfd1a"><span class="grfd1">DASH</span>
+                            100 USD</li>
+                        <!--<li class="list-inline-item grfd1a"><span class="grfd1">Last</span>0.0051000</li>-->
+                        <li class="list-inline-item"><span class="grfd1">High<i class="uparw"></i></span>25</li>
+                        <li class="list-inline-item"><span class="grfd1">Low<i class="dwnarw"></i></span>20</li>
+                    </ul>
+                    <div class="graph_im1 mx-auto text-center" id="chart_div3"> </div>
+                </div>
+                <div class="tab-pane fade show" id="pill5">
+                    <ul class="list-inline grp_lis1">
+                        <li class="list-inline-item grfd1a"><span class="grfd1">LTC</span>
+                            100 USD</li>
+                        <!--<li class="list-inline-item grfd1a"><span class="grfd1">Last</span>0.0051000</li>-->
+                        <li class="list-inline-item"><span class="grfd1">High<i class="uparw"></i></span>6</li>
+                        <li class="list-inline-item"><span class="grfd1">Low<i class="dwnarw"></i></span>5</li>
+                    </ul>
+                    <div class="graph_im1 mx-auto text-center" id="chart_div4"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="chos_sc owl_sc1 wow fadeInUp">
+    <div class="container">
+        <div class="cm_head1">
+            <h4>Why you Choose US</h4>
+            <p>Here are a few reasons why you should choose us</p>
+        </div>
+        <div class="chos_blk_wrap mt-3 mt-md-4 row">
+            <div class="col-md-6 col-lg-4">
+                <div class="chos_blk1">
+                    <div class="chos_ico1 mx-auto text-left"> <img src="http://bcmexchange.osiztechnologies.in/design_cab/images/credit.svg" class="img-fluid"> </div>
+                    <h4>Make Easy Payment</h4>        <p>It is a long established fact that a reader will be          distracted by the readable content of a page when          looking a its layout</p>                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="chos_blk1">
+                    <div class="chos_ico1 mx-auto text-left"> <img src="http://bcmexchange.osiztechnologies.in/design_cab/images/shield.svg" class="img-fluid"> </div>
+                    <h4>No Hidden Fees</h4>         <p>It is a long established fact that a reader will be           distracted by the readable content of a page when           looking a its layout</p>                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="chos_blk1">
+                    <div class="chos_ico1 mx-auto text-left"> <img src="http://bcmexchange.osiztechnologies.in/design_cab/images/price.svg" class="img-fluid"> </div>
+                    <h4>Safe & Secure</h4>         <p>It is a long established fact that a reader will be           distracted by the readable content of a page when           looking a its layout</p>                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="chos_blk1">
+                    <div class="chos_ico1 mx-auto text-left"> <img src="http://bcmexchange.osiztechnologies.in/design_cab/images/coverage.svg" class="img-fluid"> </div>
+                    <h4>Safe & Secure</h4>         <p>It is a long established fact that a reader will be           distracted by the readable content of a page when           looking a its layout</p>                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="chos_blk1">
+                    <div class="chos_ico1 mx-auto text-left"> <img src="http://bcmexchange.osiztechnologies.in/design_cab/images/purchase.svg" class="img-fluid"> </div>
+                    <h4>Make Easy Payment</h4>        <p>It is a long established fact that a reader will be          distracted by the readable content of a page when          looking a its layout</p>                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="chos_blk1">
+                    <div class="chos_ico1 mx-auto text-left"> <img src="http://bcmexchange.osiztechnologies.in/design_cab/images/dashboard.svg" class="img-fluid"> </div>
+                    <h4>No Hidden Fees</h4>         <p>It is a long established fact that a reader will be           distracted by the readable content of a page when           looking a its layout</p>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cust_sc owl_sc1 wow fadeInUp">
+    <div class="container">
+        <div class="cm_head1">
+            <h4>
+                Our Customer Say </h4>
+            <!-- <div class="sep1"><img src="http://bcmexchange.osiztechnologies.in/design_cab/images/sep1.png" class="img-fluid"></div> -->
+            <p>
+                Your team is most productive when your entire design workflow is in one place. </p>
+        </div>
+        <div class="owl_cblk1 mt-4 mt-md-5">
+            <div class="owl-carousel owl-theme" id="owl_carou2">
+                            </div>
+        </div>
+    </div>
+</section>
+{% endblock contents %}

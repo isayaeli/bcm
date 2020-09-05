@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block contents %}
+  <div class="container">
+    <div class="cm_head2">
+      <h3>Contact Us</h3>
+    </div>
+    <div class="fw_wd">
+      <div class="cntc_cn1">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="cntc_lef">
+              <p>Lorem Ipsum lorem quis bibendum auctor, nisi 
+                elit consequat amet ipsum, sagittis vulputate.</p>
+              <div class="cntc_rw1">
+                <div class="cntc_ico1"><img src="http://bcmexchange.osiztechnologies.in/design_cab/images/cntc_ico1.png" class="img-fluid"></div>
+                <div class="cntc_rc1">
+                  <p>+1 100 - 200 -3000</p>
+                  <p>+1 100 - 200 -3000</p>
+                </div>
+              </div>
+              <div class="cntc_rw1">
+                <div class="cntc_ico1"><img src="http://bcmexchange.osiztechnologies.in/design_cab/images/cntc_ico2.png" class="img-fluid"></div>
+                <div class="cntc_rc1">
+                  <p>mail@bcmexchange.com</p>
+                </div>
+              </div>
+              <ul class="list-inline soc_lis2">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">      
+			<form action="http://bcmexchange.osiztechnologies.in/contact.jsp" id="contact_form" class="cntc_frm1" method="post" accept-charset="utf-8">
+                                                          <input type="hidden" name="cs_name" value="9537d1d9fd85cbeae342bafb7fa3e13a" />
+              <div class="form-group">
+                 <input type="text" placeholder="Your Name" class="form-control" id="" name="contact_name">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Email ID" class="form-control" id="" name='contact_email'>
+              </div>
+              <div class="form-group">
+                  <input type="text" placeholder="Subject" class="form-control" id="" name="subject">
+              </div>
+              <div class="form-group">
+			   <textarea  name="contact_message" class="tarea1" id="" placeholder="Description" style="height:100px;"></textarea>
+            
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn cm_orngbtn1">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock contents %}
